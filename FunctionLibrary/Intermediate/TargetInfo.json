@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "FunctionLibrary",
+			"Path": "D:\\Git Repository\\UE_FunctionLibrary.Cpp\\FunctionLibrary\\Source\\FunctionLibrary.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "FunctionLibraryEditor",
+			"Path": "D:\\Git Repository\\UE_FunctionLibrary.Cpp\\FunctionLibrary\\Source\\FunctionLibraryEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
