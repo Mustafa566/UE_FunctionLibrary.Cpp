@@ -114,7 +114,9 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::Function_MetaDataParams[] = {
 		{ "Category", "mustafa library" },
+		{ "Comment", "// Pure function with bool\n" },
 		{ "ModuleRelativePath", "Public/MustafaLibrary.h" },
+		{ "ToolTip", "Pure function with bool" },
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMustafaLibrary, nullptr, "MyPureMethod", nullptr, nullptr, sizeof(Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::MustafaLibrary_eventMyPureMethod_Parms), Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14042401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMustafaLibrary_MyPureMethod_Statics::Function_MetaDataParams)) };
@@ -151,6 +153,7 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMustafaLibrary_text_Statics::Function_MetaDataParams[] = {
 		{ "Category", "mustafa library" },
+		{ "Comment", "// \n" },
 		{ "ModuleRelativePath", "Public/MustafaLibrary.h" },
 	};
 #endif
@@ -185,8 +188,8 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMustafaLibrary_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UMustafaLibrary_AddTwoNumbers, "AddTwoNumbers" }, // 2330112882
-		{ &Z_Construct_UFunction_UMustafaLibrary_MyPureMethod, "MyPureMethod" }, // 2354847165
-		{ &Z_Construct_UFunction_UMustafaLibrary_text, "text" }, // 3786266681
+		{ &Z_Construct_UFunction_UMustafaLibrary_MyPureMethod, "MyPureMethod" }, // 1574315131
+		{ &Z_Construct_UFunction_UMustafaLibrary_text, "text" }, // 3870441955
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMustafaLibrary_Statics::Class_MetaDataParams[] = {
@@ -232,9 +235,9 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_Repository_UE_FunctionLibrary_Cpp_FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UMustafaLibrary, UMustafaLibrary::StaticClass, TEXT("UMustafaLibrary"), &Z_Registration_Info_UClass_UMustafaLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMustafaLibrary), 1422412932U) },
+		{ Z_Construct_UClass_UMustafaLibrary, UMustafaLibrary::StaticClass, TEXT("UMustafaLibrary"), &Z_Registration_Info_UClass_UMustafaLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMustafaLibrary), 2298714372U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_Repository_UE_FunctionLibrary_Cpp_FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_3595762046(TEXT("/Script/FunctionLibrary"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_Repository_UE_FunctionLibrary_Cpp_FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_4113373280(TEXT("/Script/FunctionLibrary"),
 		Z_CompiledInDeferFile_FID_Git_Repository_UE_FunctionLibrary_Cpp_FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Git_Repository_UE_FunctionLibrary_Cpp_FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -1,0 +1,30 @@
+﻿  Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" FunctionLibraryEditor Win64 Development -Project="D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\FunctionLibrary.uproject" -WaitMutex -FromMsBuild -Rebuild
+  Log file: C:\Users\Mustafa Bolat\AppData\Local\UnrealBuildTool\Log.txt
+  Cleaning FunctionLibraryEditor and UnrealHeaderTool binaries...
+  Unhandled exception: System.AggregateException: One or more errors occurred. (Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.dll (Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.dll - Access is denied.
+  Processes with open handles to file:
+    6860: D:\Development tools\UE_5.1\Engine\Binaries\Win64\UnrealEditor.exe (started 02/09/2023 23:17:43))) (Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.pdb (Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.pdb - Access is denied.
+  Processes with open handles to file:
+    15240: D:\Development tools\UE_5.1\Engine\Binaries\Win64\LiveCodingConsole.exe (started 02/09/2023 23:44:24)))
+   ---> Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.dll (Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.dll - Access is denied.
+  Processes with open handles to file:
+    6860: D:\Development tools\UE_5.1\Engine\Binaries\Win64\UnrealEditor.exe (started 02/09/2023 23:17:43))
+     --- End of inner exception stack trace ---
+     at System.Threading.Tasks.TaskReplicator.Run[TState](ReplicatableUserAction`1 action, ParallelOptions options, Boolean stopOnFirstFailure)
+     at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+  --- End of stack trace from previous location ---
+     at System.Threading.Tasks.Parallel.ThrowSingleCancellationExceptionOrOtherException(ICollection exceptions, CancellationToken cancelToken, Exception otherException)
+     at System.Threading.Tasks.Parallel.PartitionerForEachWorker[TSource,TLocal](Partitioner`1 source, ParallelOptions parallelOptions, Action`1 simpleBody, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+     at System.Threading.Tasks.Parallel.ForEachWorker[TSource,TLocal](IEnumerable`1 source, ParallelOptions parallelOptions, Action`1 body, Action`2 bodyWithState, Action`3 bodyWithStateAndIndex, Func`4 bodyWithStateAndLocal, Func`5 bodyWithEverything, Func`1 localInit, Action`1 localFinally)
+     at System.Threading.Tasks.Parallel.ForEach[TSource](IEnumerable`1 source, Action`1 body)
+     at UnrealBuildTool.CleanMode.<>c__DisplayClass3_0.<Clean>b__2() in D:\build\++UE5\Sync\Engine\Saved\CsTools\Engine\Source\Programs\UnrealBuildTool\Modes\CleanMode.cs:line 291
+     at System.Threading.Tasks.Task.InnerInvoke()
+     at System.Threading.Tasks.Task.<>c.<.cctor>b__272_0(Object obj)
+     at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+  --- End of stack trace from previous location ---
+     at System.Threading.ExecutionContext.RunFromThreadPoolDispatchLoop(Thread threadPoolThread, ExecutionContext executionContext, ContextCallback callback, Object state)
+     at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+   ---> (Inner Exception #1) Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.pdb (Unable to delete D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Binaries\Win64\UnrealEditor-FunctionLibrary.pdb - Access is denied.
+  Processes with open handles to file:
+    15240: D:\Development tools\UE_5.1\Engine\Binaries\Win64\LiveCodingConsole.exe (started 02/09/2023 23:44:24))<---
+  
