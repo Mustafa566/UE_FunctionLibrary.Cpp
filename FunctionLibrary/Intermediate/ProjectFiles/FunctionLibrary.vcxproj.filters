@@ -59,5 +59,6 @@
     <ClInclude Include="..\..\Source\FunctionLibrary\Public\MustafaLibrary.h">
       <Filter>Source\FunctionLibrary\Public</Filter>
     </ClInclude>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

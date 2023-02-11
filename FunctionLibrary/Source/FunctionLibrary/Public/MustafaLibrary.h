@@ -19,7 +19,7 @@ class FUNCTIONLIBRARY_API UMustafaLibrary : public UBlueprintFunctionLibrary
 	static FString text(FString Name);
 
 	UFUNCTION(BlueprintCallable, Category = "mustafa library")
-	static float AddTwoNumbers(float A, float B);
+	static float IncVariable(float A, float B);
 
 	// Pure function with bool
 	UFUNCTION(BlueprintPure, Category = "mustafa library")

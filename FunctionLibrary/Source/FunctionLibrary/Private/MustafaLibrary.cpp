@@ -5,7 +5,7 @@ FString UMustafaLibrary::text(FString Name)
     return FString(Name);
 }
 
-float UMustafaLibrary::AddTwoNumbers(float A, float B)
+float UMustafaLibrary::IncVariable(float A, float B)
 {
     return A + B;
 }

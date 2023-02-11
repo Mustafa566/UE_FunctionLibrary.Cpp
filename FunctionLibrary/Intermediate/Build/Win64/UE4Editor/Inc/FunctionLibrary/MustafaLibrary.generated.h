@@ -16,6 +16,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_15_SPARSE_DATA
 #define FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_15_RPC_WRAPPERS \
  \
+	DECLARE_FUNCTION(execIncVariable); \
 	DECLARE_FUNCTION(execMyPureMethod); \
 	DECLARE_FUNCTION(execAddTwoNumbers); \
 	DECLARE_FUNCTION(exectext);
@@ -23,6 +24,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 #define FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execIncVariable); \
 	DECLARE_FUNCTION(execMyPureMethod); \
 	DECLARE_FUNCTION(execAddTwoNumbers); \
 	DECLARE_FUNCTION(exectext);
