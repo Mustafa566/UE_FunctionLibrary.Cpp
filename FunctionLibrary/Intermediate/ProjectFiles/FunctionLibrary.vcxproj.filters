@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\FunctionLibrary.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+      <UniqueIdentifier>{11FD1187-0C6B-4B95-8D7D-6ADE1E047429}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FunctionLibrary.Target.cs">
       <Filter>Source</Filter>
@@ -11,9 +11,8 @@
     <None Include="..\..\Source\FunctionLibraryEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
-    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
-      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+      <UniqueIdentifier>{2B363482-78C8-4E63-B219-3F44823D4FAA}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -24,11 +23,8 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
-    <None Include="..\..\Config\DefaultInput.ini">
-      <Filter>Config</Filter>
-    </None>
     <Filter Include="Source\FunctionLibrary">
-      <UniqueIdentifier>{31A2D36F-5AF3-3E96-B06E-3397CF002166}</UniqueIdentifier>
+      <UniqueIdentifier>{BF4CAC43-4D45-43BC-9085-C4BCBF932961}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\FunctionLibrary\FunctionLibrary.Build.cs">
       <Filter>Source\FunctionLibrary</Filter>
@@ -46,17 +42,22 @@
       <Filter>Source\FunctionLibrary</Filter>
     </ClInclude>
     <Filter Include="Source\FunctionLibrary\Private">
-      <UniqueIdentifier>{BB861B9B-4014-3A37-AD76-45DF4F2B69E0}</UniqueIdentifier>
+      <UniqueIdentifier>{451290A5-076B-4B3F-8CB2-1A5C9ED60711}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\FunctionLibrary\Private\BP_MyPlayer.cpp">
+      <Filter>Source\FunctionLibrary\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\FunctionLibrary\Private\MustafaLibrary.cpp">
       <Filter>Source\FunctionLibrary\Private</Filter>
     </ClCompile>
     <Filter Include="Source\FunctionLibrary\Public">
-      <UniqueIdentifier>{2F9EDA64-07A3-3E94-8586-9BBEE6EB72D1}</UniqueIdentifier>
+      <UniqueIdentifier>{B57A0FEA-D2E5-4812-BB9D-B792F5F98B07}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\FunctionLibrary\Public\BP_MyPlayer.h">
+      <Filter>Source\FunctionLibrary\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\FunctionLibrary\Public\MustafaLibrary.h">
       <Filter>Source\FunctionLibrary\Public</Filter>
     </ClInclude>
-    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>
