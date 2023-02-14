@@ -8,6 +8,8 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class AActor;
+struct FVector;
 #ifdef FUNCTIONLIBRARY_MustafaLibrary_generated_h
 #error "MustafaLibrary.generated.h already included, missing '#pragma once' in MustafaLibrary.h"
 #endif
@@ -16,17 +18,17 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #define FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_15_SPARSE_DATA
 #define FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_15_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execIncVariable); \
+	DECLARE_FUNCTION(execDoLinetrace); \
 	DECLARE_FUNCTION(execMyPureMethod); \
-	DECLARE_FUNCTION(execAddTwoNumbers); \
+	DECLARE_FUNCTION(execIncVariable); \
 	DECLARE_FUNCTION(exectext);
 
 
 #define FunctionLibrary_Source_FunctionLibrary_Public_MustafaLibrary_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
  \
-	DECLARE_FUNCTION(execIncVariable); \
+	DECLARE_FUNCTION(execDoLinetrace); \
 	DECLARE_FUNCTION(execMyPureMethod); \
-	DECLARE_FUNCTION(execAddTwoNumbers); \
+	DECLARE_FUNCTION(execIncVariable); \
 	DECLARE_FUNCTION(exectext);
 
 

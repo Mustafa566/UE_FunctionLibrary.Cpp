@@ -14,14 +14,21 @@ class FUNCTIONLIBRARY_API UMustafaLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
-	// 
-	UFUNCTION(BlueprintCallable, Category = "mustafa library")
-	static FString text(FString Name);
+	public:
+		// 
+		UFUNCTION(BlueprintCallable, Category = "mustafa library")
+		static FString text(FString Name);
 
-	UFUNCTION(BlueprintCallable, Category = "mustafa library")
-	static float IncVariable(float A, float B);
+		UFUNCTION(BlueprintCallable, Category = "mustafa library")
+		static float IncVariable(float A, float B);
 
-	// Pure function with bool
-	UFUNCTION(BlueprintPure, Category = "mustafa library")
-	static bool MyPureMethod();
+		// Pure function with bool
+		UFUNCTION(BlueprintPure, Category = "mustafa library")
+		static bool MyPureMethod();
+
+		/*UFUNCTION(BlueprintCallable, Category = "Linetrace")
+		static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation, AActor*& OutHitActor);*/
+
+		UFUNCTION(BlueprintCallable, Category = "Linetrace")
+		static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation);
 };

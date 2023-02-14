@@ -1,3 +1,13 @@
 D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\Definitions.FunctionLibrary.h
 D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Source\FunctionLibrary\Public\MustafaLibrary.h
 D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Inc\FunctionLibrary\MustafaLibrary.generated.h
+D:\Development tools\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h
+D:\Development tools\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet/KismetSystemLibrary.h
+D:\Development tools\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/PropertyAccessUtil.h
+D:\Development tools\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\KismetSystemLibrary.generated.h
+D:\Development tools\UE_4.27\Engine\Source\Runtime\Engine\Classes\Sound/DialogueTypes.h
+D:\Development tools\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\DialogueTypes.generated.h
+D:\Development tools\UE_4.27\Engine\Source\Runtime\Engine\Classes\Kismet\GameplayStaticsTypes.h
+D:\Development tools\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStaticsTypes.generated.h
+D:\Development tools\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameplayStatics.generated.h
+D:\Development tools\UE_4.27\Engine\Source\Runtime\Engine\Public\DrawDebugHelpers.h

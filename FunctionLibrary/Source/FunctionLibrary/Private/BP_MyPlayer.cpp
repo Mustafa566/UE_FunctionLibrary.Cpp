@@ -2,6 +2,9 @@
 
 
 #include "BP_MyPlayer.h"
+#include "MustafaLibrary.h"
+
+UMustafaLibrary* MustafaLibrary;
 
 // Sets default values
 ABP_MyPlayer::ABP_MyPlayer()
@@ -15,7 +18,7 @@ ABP_MyPlayer::ABP_MyPlayer()
 void ABP_MyPlayer::BeginPlay()
 {
 	Super::BeginPlay();
-	
+	MustafaLibrary = NewObject<UMustafaLibrary>();
 }
 
 // Called every frame
@@ -70,8 +73,11 @@ void ABP_MyPlayer::StopJump()
 
 void ABP_MyPlayer::Interact()
 {
-	ABP_MyPlayer::OwnPrint("testtttt");
-	ABP_MyPlayer::OwnPrint("hallo");
+	FVector OutHitLocation;
+	if (UMustafaLibrary::DoLinetrace(this, OutHitLocation))
+	{
+		UE_LOG(LogTemp, Warning, TEXT("OutHitLocation: %s"), *OutHitLocation.ToString());
+	}
 }
 
 void ABP_MyPlayer::OwnPrint(FString Subject)
