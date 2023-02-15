@@ -31,4 +31,7 @@ class FUNCTIONLIBRARY_API UMustafaLibrary : public UBlueprintFunctionLibrary
 
 		UFUNCTION(BlueprintCallable, Category = "Linetrace")
 		static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation);
+
+		UPROPERTY(EditAnywhere, Category = "Collision")
+		TEnumAsByte<ECollisionChannel> TraceChannelProperty = ECC_Pawn;
 };

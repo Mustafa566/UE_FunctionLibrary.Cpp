@@ -19,25 +19,33 @@ bool UMustafaLibrary::MyPureMethod()
 
 bool UMustafaLibrary::DoLinetrace(AActor* Actor, FVector& OutHitLocation)
 {
-	APlayerController* PlayerController = UGameplayStatics::GetPlayerController(Actor, 0);
-	FVector PlayerViewPointLocation;
-	FRotator PlayerViewPointRotation;
-	PlayerController->GetPlayerViewPoint(PlayerViewPointLocation, PlayerViewPointRotation);
+    // Get the player's camera
+    APlayerController* PlayerController = UGameplayStatics::GetPlayerController(Actor, 0);
+    if (!PlayerController) return false;
+    FVector PlayerViewPointLocation;
+    FRotator PlayerViewPointRotation;
+    PlayerController->GetPlayerViewPoint(PlayerViewPointLocation, PlayerViewPointRotation);
 
-	FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * 1000.0f;
-	FVector LineTraceStart = PlayerViewPointLocation;
+    // Define the linetrace start and end points
+    FVector LineTraceEnd = PlayerViewPointLocation + PlayerViewPointRotation.Vector() * 1000.0f;
+    FVector LineTraceStart = PlayerViewPointLocation;
 
-	FHitResult HitResult;
+    // Perform the linetrace
+    FHitResult HitResult;
 
-	// Visualize the linetrace for a duration of 5 seconds
-	DrawDebugLine(Actor->GetWorld(), LineTraceStart, HitResult.Location, FColor::Red, true, 5.0f);
+    UWorld* World = Actor->GetWorld();
+    if (!World) return false;
 
-	bool bDidHit = Actor->GetWorld()->LineTraceSingleByChannel(HitResult, LineTraceStart, LineTraceEnd, ECC_Visibility);
-	if (bDidHit)
-	{
-		OutHitLocation = HitResult.Location;
-		return true;
-	}
-
-	return false;
+    bool bDidHit = World->LineTraceSingleByChannel(HitResult, LineTraceStart, LineTraceEnd, ECC_Visibility);
+    if (bDidHit)
+    {
+        OutHitLocation = HitResult.Location;
+        // Draw a debug line to visualize the linetrace
+        DrawDebugLine(Actor->GetWorld(), LineTraceStart, HitResult.Location, FColor::Green, false, 2.0f, 0, 2.0f);
+        return true;
+    }
+    // Draw a debug line to visualize the linetrace
+    DrawDebugLine(Actor->GetWorld(), LineTraceStart, LineTraceEnd, FColor::Red, false, 2.0f, 0, 2.0f);
+    return false;
 }
+
