@@ -40,6 +40,11 @@ bool UMustafaLibrary::DoLinetrace(AActor* Actor, FVector& OutHitLocation)
     if (bDidHit)
     {
         OutHitLocation = HitResult.Location;
+        AActor* HitActor = HitResult.GetActor(); // Get the hit actor
+
+        FString HitActorName = HitActor->GetName();
+        GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, FString::Printf(TEXT("Hit Actor: %s"), *HitActorName));
+
         // Draw a debug line to visualize the linetrace
         DrawDebugLine(Actor->GetWorld(), LineTraceStart, HitResult.Location, FColor::Green, false, 2.0f, 0, 2.0f);
         return true;

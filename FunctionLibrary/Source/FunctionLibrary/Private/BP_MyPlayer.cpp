@@ -3,6 +3,9 @@
 
 #include "BP_MyPlayer.h"
 #include "MustafaLibrary.h"
+#include "Engine/World.h"
+#include "DrawDebugHelpers.h"
+
 
 UMustafaLibrary* MustafaLibrary;
 
@@ -11,7 +14,7 @@ ABP_MyPlayer::ABP_MyPlayer()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
+	
 }
 
 // Called when the game starts or when spawned
@@ -49,18 +52,21 @@ void ABP_MyPlayer::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	PlayerInputComponent->BindAction("Interact", IE_Pressed, this, &ABP_MyPlayer::Interact);
 }
 
+// Player moving forward and backward
 void ABP_MyPlayer::MoveForward(float value)
 {
 	FVector Direction = GetActorForwardVector();
 	AddMovementInput(Direction, value);
 }
 
+// Player moving right and left
 void ABP_MyPlayer::MoveRight(float value)
 {
 	FVector Direction = GetActorRightVector();
 	AddMovementInput(Direction, value);
 }
 
+// Jumping mechanic
 void ABP_MyPlayer::StartJump()
 {
 	bPressedJump = true;
@@ -71,14 +77,13 @@ void ABP_MyPlayer::StopJump()
 	bPressedJump = false;
 }
 
+// Interact with actors using a linetrace
 void ABP_MyPlayer::Interact()
 {
 	FVector OutHitLocation;
-	if (UMustafaLibrary::DoLinetrace(this, OutHitLocation))
-	{
-		UE_LOG(LogTemp, Warning, TEXT("OutHitLocation: %s"), *OutHitLocation.ToString());
-	}
+	UMustafaLibrary::DoLinetrace(this, OutHitLocation);
 }
+
 
 void ABP_MyPlayer::OwnPrint(FString Subject)
 {

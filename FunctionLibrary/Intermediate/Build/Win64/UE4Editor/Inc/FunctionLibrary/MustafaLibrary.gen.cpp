@@ -97,10 +97,8 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UMustafaLibrary_DoLinetrace_Statics::Function_MetaDataParams[] = {
-		{ "Category", "Linetrace" },
-		{ "Comment", "/*UFUNCTION(BlueprintCallable, Category = \"Linetrace\")\n\x09\x09static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation, AActor*& OutHitActor);*/" },
+		{ "Category", "mustafa library" },
 		{ "ModuleRelativePath", "Public/MustafaLibrary.h" },
-		{ "ToolTip", "UFUNCTION(BlueprintCallable, Category = \"Linetrace\")\n               static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation, AActor*& OutHitActor);" },
 	};
 #endif
 	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_UMustafaLibrary_DoLinetrace_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UMustafaLibrary, nullptr, "DoLinetrace", nullptr, nullptr, sizeof(MustafaLibrary_eventDoLinetrace_Parms), Z_Construct_UFunction_UMustafaLibrary_DoLinetrace_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMustafaLibrary_DoLinetrace_Statics::PropPointers), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04C22401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_UMustafaLibrary_DoLinetrace_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_UMustafaLibrary_DoLinetrace_Statics::Function_MetaDataParams)) };
@@ -256,7 +254,7 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_FunctionLibrary,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_UMustafaLibrary_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_UMustafaLibrary_DoLinetrace, "DoLinetrace" }, // 2350752923
+		{ &Z_Construct_UFunction_UMustafaLibrary_DoLinetrace, "DoLinetrace" }, // 625157593
 		{ &Z_Construct_UFunction_UMustafaLibrary_IncVariable, "IncVariable" }, // 1271765977
 		{ &Z_Construct_UFunction_UMustafaLibrary_MyPureMethod, "MyPureMethod" }, // 1950691366
 		{ &Z_Construct_UFunction_UMustafaLibrary_text, "text" }, // 3696800119
@@ -270,7 +268,7 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 #endif
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_UMustafaLibrary_Statics::NewProp_TraceChannelProperty_MetaData[] = {
-		{ "Category", "Collision" },
+		{ "Category", "mustafa library" },
 		{ "ModuleRelativePath", "Public/MustafaLibrary.h" },
 	};
 #endif
@@ -305,7 +303,7 @@ void EmptyLinkFunctionForGeneratedCodeMustafaLibrary() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(UMustafaLibrary, 3027317896);
+	IMPLEMENT_CLASS(UMustafaLibrary, 1003506806);
 	template<> FUNCTIONLIBRARY_API UClass* StaticClass<UMustafaLibrary>()
 	{
 		return UMustafaLibrary::StaticClass();

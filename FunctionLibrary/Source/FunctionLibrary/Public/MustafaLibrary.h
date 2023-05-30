@@ -26,12 +26,9 @@ class FUNCTIONLIBRARY_API UMustafaLibrary : public UBlueprintFunctionLibrary
 		UFUNCTION(BlueprintPure, Category = "mustafa library")
 		static bool MyPureMethod();
 
-		/*UFUNCTION(BlueprintCallable, Category = "Linetrace")
-		static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation, AActor*& OutHitActor);*/
-
-		UFUNCTION(BlueprintCallable, Category = "Linetrace")
+		UFUNCTION(BlueprintCallable, Category = "mustafa library")
 		static bool DoLinetrace(AActor* Actor, FVector& OutHitLocation);
 
-		UPROPERTY(EditAnywhere, Category = "Collision")
+		UPROPERTY(EditAnywhere, Category = "mustafa library")
 		TEnumAsByte<ECollisionChannel> TraceChannelProperty = ECC_Pawn;
 };
