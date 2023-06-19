@@ -1,0 +1,19 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-FunctionLibrary-4940.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\FunctionLibraryEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\BP_MyPlayer.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\MustafaLibrary.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\FunctionLibrary.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\FunctionLibraryGameModeBase.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\BP_MyPlayer.gen.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\FunctionLibrary.init.gen.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\FunctionLibraryGameModeBase.gen.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\MustafaLibrary.gen.cpp.obj"
+"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\Default.rc2.res"
+/OUT:"D:\Git Repository\UE_FunctionLibrary.Cpp\FunctionLibrary\Intermediate\Build\Win64\UE4Editor\Development\FunctionLibrary\UE4Editor-FunctionLibrary-4940.lib"
